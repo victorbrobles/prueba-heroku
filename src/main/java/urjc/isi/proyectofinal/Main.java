@@ -22,7 +22,7 @@ public class Main {
 	 * @throws URISyntaxException
 	 */
 	public static String defaultResponse(Request request, Response response) throws ClassNotFoundException, URISyntaxException {
-       return "<span style=bgcolor:#FF7247;</span><form action='/pag_principal' method='post' enctype='multipart/form-data'>"
+       return "<body style=background-color:#FF7247;><form action='/pag_principal' method='post' enctype='multipart/form-data'>"
        		+ "<h1 style=color:#1821EB;>Bienvenido a nuestra web de peliculas</h1>"
     		+ "<br>" + "<h2 style=color:#5B72EB;>ACTORES</h2>" + "<br>"
     		+ "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll>Imprimir todos los actores</a>"
@@ -67,7 +67,7 @@ public class Main {
     		+ "<a href=https://prueba-grupo4.herokuapp.com/guionistas/selectAll>Imprimir todos los guionistas</a>"
     		+ "<br>" + "<h2 style=color:#5B72EB;>GENEROS</h2>" + "<br>"
     		+ "<a href=https://prueba-grupo4.herokuapp.com/generos/selectAll>Imprimir todos los generos</a>"
-    		+ "</form>"; 
+    		+ "</form></body>"; 
     }
 
 	/**
