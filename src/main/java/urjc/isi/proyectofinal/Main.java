@@ -22,8 +22,11 @@ public class Main {
 	 * @throws URISyntaxException
 	 */
 	public static String defaultResponse(Request request, Response response) throws ClassNotFoundException, URISyntaxException {
-       return "<form action='/pag_principal' method='post' enctype='multipart/form-data'>\""
-       		+ "<h1>Bienvenido a nuestra web de peliculas</h1>";
+       return "<form action='/pag_principal' method='post' enctype='multipart/form-data'>"
+       		+ "<h1>Bienvenido a nuestra web de peliculas</h1>"
+    		+ "<a href=prueba-grupo4.herokuapp.com/actores/selectAll>Imprimir todos los actores</a>"
+    		+ "</form>";
+    		  
     }
 
 	/**
