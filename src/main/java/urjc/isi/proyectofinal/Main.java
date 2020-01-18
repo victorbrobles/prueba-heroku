@@ -25,6 +25,16 @@ public class Main {
        return "<form action='/pag_principal' method='post' enctype='multipart/form-data'>"
        		+ "<h1>Bienvenido a nuestra web de peliculas</h1>"
     		+ "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll>Imprimir todos los actores</a>"
+       		+ "<p>Tambien puedes filtrar los actores por:</p>" 
+    		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll?fecha_nac=x>fecha de nacimiento</a>"
+    		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll?fecha_nac=x-x>intervalo fecha de nacimiento</a>"
+    		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll?fecha_muer=x>fecha de muerte</a>"
+    		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll?fecha_muer=x-x>intervalo fecha de muerte</a>"
+    		+ "<p>Sustituyendo las x por los valores que quieras</p>"
+    		+ "<a href=https://prueba-grupo4.herokuapp.com/peliculas/selectAll>Imprimir todas las peliculas</a>"
+    		+ "<a href=https://prueba-grupo4.herokuapp.com/directores/selectAll>Imprimir todos los directores</a>"
+    		+ "<a href=https://prueba-grupo4.herokuapp.com/guionistas/selectAll>Imprimir todos los guionistas</a>"
+    		+ "<a href=https://prueba-grupo4.herokuapp.com/generos/selectAll>Imprimir todos los generos</a>"
     		+ "</form>";
     		  
     }
