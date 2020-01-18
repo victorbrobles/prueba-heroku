@@ -22,9 +22,9 @@ public class Main {
 	 * @throws URISyntaxException
 	 */
 	public static String defaultResponse(Request request, Response response) throws ClassNotFoundException, URISyntaxException {
-       return "<form action='/pag_principal' method='post' enctype='multipart/form-data'>"
-       		+ "<h1 style=color:red;>Bienvenido a nuestra web de peliculas</h1>"
-    		+ "<br>" + "<h2>ACTORES</h2>" + "<br>"
+       return "<span style=background-color:#FF7247;</span><form action='/pag_principal' method='post' enctype='multipart/form-data'>"
+       		+ "<h1 style=color:#1821EB;>Bienvenido a nuestra web de peliculas</h1>"
+    		+ "<br>" + "<h2 style=color:#5B72EB;>ACTORES</h2>" + "<br>"
     		+ "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll>Imprimir todos los actores</a>"
        		+ "<p>Tambien puedes filtrar los actores por:</p>" 
        		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll?id_act=x>id</a>" + "<br>"
@@ -34,7 +34,7 @@ public class Main {
     		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll?fecha_muer=x>fecha de muerte</a>" + "<br>"
     		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/actores/selectAll?fecha_muer=x-x>intervalo fecha de muerte</a>" + "<br>"
     		+ "<p>Sustituyendo las x por los valores deseados</p>"
-    		+ "<br>" + "<h2>PELICULAS</H2>" + "<br>"
+    		+ "<br>" + "<h2 style=color:#5B72EB;>PELICULAS</H2>" + "<br>"
     		+ "<a href=https://prueba-grupo4.herokuapp.com/peliculas/selectAll>Imprimir todas las peliculas</a>"
     		+ "<p>Tambien puedes filtrar las peliculas por:</p>" 
     		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/peliculas/selectAll?titulo=x>titulo</a>" + "<br>"
@@ -60,14 +60,14 @@ public class Main {
     		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/peliculas/ranking?director=x>director</a>" + "<br>"
     		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/peliculas/ranking?guionista=x>guionista</a>" + "<br>"
     		+ "-->" + "<a href=https://prueba-grupo4.herokuapp.com/peliculas/ranking?genero=x>genero</a>" + "<br>"
-    		+ "<br>" + "<h2>DIRECTORES</h2>" + "<br>"
+    		+ "<p>Sustituyendo las x por los valores deseados</p>"
+    		+ "<br>" + "<h2 style=color:#5B72EB;>DIRECTORES</h2>" + "<br>"
     		+ "<a href=https://prueba-grupo4.herokuapp.com/directores/selectAll>Imprimir todos los directores</a>"
-    		+ "<br>" + "<h2>GUIONISTAS</h2>" + "<br>"
+    		+ "<br>" + "<h2 style=color:#5B72EB;>GUIONISTAS</h2>" + "<br>"
     		+ "<a href=https://prueba-grupo4.herokuapp.com/guionistas/selectAll>Imprimir todos los guionistas</a>"
-    		+ "<br>" + "<h2>GENEROS</h2>" + "<br>"
+    		+ "<br>" + "<h2 style=color:#5B72EB;>GENEROS</h2>" + "<br>"
     		+ "<a href=https://prueba-grupo4.herokuapp.com/generos/selectAll>Imprimir todos los generos</a>"
-    		+ "</form>";
-    		  
+    		+ "</form>"; 
     }
 
 	/**
